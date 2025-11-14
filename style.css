@@ -165,7 +165,7 @@ header{
 }
 
 
-@media (max-width: 1050px){
+@media (max-width: 550px){
     .extension{
        margin: 25px 25px;
     }
@@ -186,7 +186,45 @@ header{
     }
     .options span{
         font-size: 10px;
+        padding: 7px 10px;
     }
 
+    .con-write-up p{
+        font-size: 12px;
+    }
+
+    .con-write-up h5{
+        font-size: 17px;
+    }
+
+    .top img{
+        height: 4.5vh;
+    }
+
+    .bottom span{
+        padding: 5px;
+        
+    }
+
+    .bottom i{
+        color: hsl(3, 71%, 56%);
+        font-size: 29px;
+        cursor: pointer;
     
+    }
+
+    .bottom .fa-toggle-off{
+        color: #ffff;
+        font-size: 29px;
+        cursor: pointer;
+    
+    }
+
+}
+
+@media (min-width: 650px){
+    .extension-con{
+        flex: 0 0 40%;
+        margin: 5px;
+    }
 }
