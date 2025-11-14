@@ -236,7 +236,7 @@ header{
         display: flex;
     }
 
-    .top img{
+     .top img{
         height: 4.5vh;
     }
 }
@@ -245,6 +245,9 @@ header{
     .extension-con{
         flex: 0 0 30%;
     }
-
+    
+    .top img{
+        height: 7vh;
+    }
 
 }
