@@ -222,9 +222,23 @@ header{
 
 }
 
-@media (min-width: 650px){
+@media (min-width: 550px){
     .extension-con{
         flex: 0 0 40%;
         margin: 5px;
+    }
+
+    .extension{
+       margin: 25px 25px;
+    }
+
+    .container{
+        display: flex;
+    }
+}
+
+@media (min-width: 1030px){
+    .extension-con{
+        flex: 0 0 30%;
     }
 }
