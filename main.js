@@ -24,25 +24,27 @@ document.getElementById('dark-mode').onclick = () => {
     let icon = document.getElementById('sun');
     let title = document.getElementById('title');
 
-    if (body.style.background === 'white') {
-        body.style.background = 'hsl(225, 78%, 16%)';
-        body.style.color = 'white';
-        body.style.transition = '0.5s';
-        
-        title.style.color = '#fff';
+    const light = body.classList.contains('light');
 
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
+    if (light) {
+        body.classList.remove('light');
+        body.style.background = 'bisque';
+        body.style.transition = '0.4s';
+        
+        title.style.color = 'hsl(225, 78%, 16%)';
+        
+        icon.classList.add('fa-sun');
+        icon.classList.remove('fa-moon');
 
     }
     else {
-        body.style.background = 'white';
-        body.style.color = 'hsl(225, 78%, 16%)';
-        body.style.transition = '0.5s';
+        body.classList.add('light');
+        body.style.background = 'hsl(225, 78%, 16%)';
+        body.style.transition = '0.4s';
         
-        title.style.color = 'hsl(225, 78%, 16%)';
+        title.style.color = '#fff';
 
-        icon.classList.add('fa-sun');
-        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-moon');
+        icon.classList.remove('fa-sun');
     }
 }
